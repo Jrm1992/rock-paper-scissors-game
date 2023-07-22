@@ -26,7 +26,7 @@ As an extra challenge I will do the following things:
 
 - Add smooth animations to make it feel more like a game.
 - Also add a computer score to make the game more interesting.
-- Be able to reset the scores (which state I maintain using `localStorage`)
+- Be able to reset the scores
 - Make the game accessible according to WCAG 2.1 standards, things like color contrast, clear element focus and the correct screen reader contexts.
 
 ### Screenshot
