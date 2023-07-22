@@ -1,28 +1,46 @@
-import { Image, ImageBackground, View } from 'react-native';
+import { Image, ImageBackground, TouchableOpacity, View } from 'react-native';
 
+import { useNavigation } from '@react-navigation/native';
 export default function Picker() {
+  const { navigate } = useNavigation();
   return (
     <ImageBackground
       source={require('../../../../assets/bg-pentagon.png')}
       resizeMode="contain"
       className="flex-1 justify-center"
     >
-      <View className="flex-1 mt-24">
-        <View className="border-[8px] absolute left-[50%] -translate-x-14 border-orange-400 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2">
+      <View className="flex-1 flex items-center mt-24">
+        <TouchableOpacity
+          activeOpacity={0.7}
+          onPress={() => navigate('result')}
+          className="absolute left-[50%] -translate-x-14 border-orange-400 border-8 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2"
+        >
           <Image source={require('../../../../assets/icon-scissors.png')} />
-        </View>
-        <View className="border-[8px] absolute top-[20%] -right-[8%] border-blue-500 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2">
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="absolute top-[20%] -right-[8%] border-blue-500 border-8 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2"
+        >
           <Image source={require('../../../../assets/icon-paper.png')} />
-        </View>
-        <View className="border-[8px] absolute top-[20%] -left-[8%] border-cyan-400 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2">
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="absolute top-[20%] -left-[8%] border-cyan-400 border-8 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2"
+        >
           <Image source={require('../../../../assets/icon-spock.png')} />
-        </View>
-        <View className="border-[8px] absolute top-[58%] left-[8%] border-purple-600 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2">
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="absolute top-[58%] left-[8%] border-purple-600 border-8 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2"
+        >
           <Image source={require('../../../../assets/icon-lizard.png')} />
-        </View>
-        <View className="border-[8px] absolute top-[58%] right-[8%] border-red-600 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2">
+        </TouchableOpacity>
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="absolute top-[58%] right-[8%] border-red-600 border-8 bg-white rounded-full flex justify-center items-center w-24 h-24 m-2"
+        >
           <Image source={require('../../../../assets/icon-rock.png')} />
-        </View>
+        </TouchableOpacity>
       </View>
     </ImageBackground>
   );

@@ -11,11 +11,7 @@ export default function Scoreboard() {
       </View>
       <View className="flex flex-row gap-4">
         <View className="w-[88px] h-20 rounded flex flex-col items-center bg-white p-2">
-          <Text className="text-blue-700 font-bold text-xs">YOU</Text>
-          <Text className="text-blue-950 font-bold text-4xl mt-1">5</Text>
-        </View>
-        <View className="w-[88px] h-20 rounded flex flex-col items-center bg-white p-2">
-          <Text className="text-blue-700 font-bold text-xs">COMPUTER</Text>
+          <Text className="text-blue-700 font-bold text-xs">SCORE</Text>
           <Text className="text-blue-950 font-bold text-4xl mt-1">5</Text>
         </View>
       </View>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1689972851935" clover="3.2.0">
-  <project timestamp="1689972851935" name="All files">
+<coverage generated="1690003288257" clover="3.2.0">
+  <project timestamp="1690003288257" name="All files">
     <metrics statements="9" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0" elements="11" coveredelements="0" complexity="0" loc="9" ncloc="9" packages="1" files="2" classes="2"/>
     <file name="metro.config.js" path="/home/jose/Documents/Projetos/rock-paper-scissors-lizard-spock/metro.config.js">
       <metrics statements="8" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
