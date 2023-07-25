@@ -7,7 +7,7 @@ export default function Button({ children, ...props }: IButton) {
     <TouchableOpacity
       activeOpacity={0.3}
       {...props}
-      className={`flex-1 flex justify-center items-center bg-transparent text-white px-1 py-2 rounded-lg border-2 border-gray-400 ${props.className}`}
+      className={`flex max-h-14 flex-1 items-center justify-center rounded-lg border-2 border-gray-400 bg-transparent px-1 py-2 text-white ${props.className}`}
     >
       {children}
     </TouchableOpacity>

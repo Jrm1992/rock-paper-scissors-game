@@ -9,12 +9,17 @@ const { Navigator, Screen, Group } = createNativeStackNavigator();
 
 export function AppRoutes() {
   return (
-    <Navigator screenOptions={{ headerShown: false }}>
+    <Navigator screenOptions={{ headerShown: false, animation: 'none' }}>
       <Group>
         <Screen name="home" component={Home} />
         <Screen name="result" component={Result} />
       </Group>
-      <Group screenOptions={{ presentation: 'transparentModal' }}>
+      <Group
+        screenOptions={{
+          presentation: 'transparentModal',
+          animation: 'slide_from_bottom'
+        }}
+      >
         <Screen name="modal" component={RulesModal} />
       </Group>
     </Navigator>
