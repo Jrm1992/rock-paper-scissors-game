@@ -52,12 +52,14 @@ export default function Result() {
           </Text>
         )}
         {winner === 'tie' && (
-          <Text className="text-center text-4xl font-bold text-white">TIE</Text>
+          <Text className="text-center text-4xl font-bold text-white">
+            NOBODY WON
+          </Text>
         )}
       </Animated.View>
       <Button className="mt-auto" onPress={() => navigate('home')}>
         <Text className="text-center text-lg font-bold text-white">
-          NEW GAME
+          PLAY AGAIN
         </Text>
       </Button>
     </View>

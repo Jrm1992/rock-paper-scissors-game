@@ -5,7 +5,14 @@ import Result from '../screens/result';
 
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-const { Navigator, Screen, Group } = createNativeStackNavigator();
+const { Navigator, Screen, Group } =
+  createNativeStackNavigator<RootStackParamList>();
+
+export type RootStackParamList = {
+  home: undefined;
+  modal: undefined;
+  result: { id: number };
+};
 
 export function AppRoutes() {
   return (
